@@ -1,0 +1,211 @@
+/*+++ Root */
+body {
+	background-color: #dfdfe5;
+}
+#root {
+	color: black;
+}
+/*--- Root */
+
+/*+++ Header */
+#head {
+	background-image: url(./img/fern-bg.jpg);
+    background-repeat: repeat-x;
+}
+#b2b {
+	color: white;
+}
+#logo {
+	margin: 10px;
+	height: 40px;
+}
+/*--- Header */
+
+/*+++ Side Bar */
+/*
+#side-bar ul {
+	list-style-type: none;
+	margin: 10px 0 0 -40px;
+}
+#side-bar li.special {
+	color: #2121AC;
+}
+#side-bar li.selected {
+	color: #C83232;
+}
+#side-bar li:hover {
+	color: #C83232;
+}
+*/
+#side-bar {
+	padding-left: 30px;
+}
+#side-bar .level-1 {
+	font-weight: bold;
+	background-color: navy;
+	color: white;
+	//padding-left: 10px;
+}
+#side-bar .level-2 {
+	//font-weight: bold;
+}
+#side-bar .level-3 {
+	margin-left: 20px;
+}
+#side-bar .clickable:hover {
+	color: #C83232;
+	cursor: pointer;
+} 
+#side-bar .selected {
+	color: #C83232;
+}
+/*--- Side Bar */
+
+/*+++ Fix */
+#fix-refresh {
+	z-index:100;
+	position: fixed;
+	bottom: 30px;
+	border: 1px solid #C83232;
+	padding: 5px;
+	background-color: white;
+	
+	right: 30px;
+}
+
+#fix {
+	z-index:100;
+	position: fixed;
+	bottom: 80px;
+	right: 30px;
+	border: 2px solid #C83232;
+	padding: 5px;
+	background-color: white;
+}
+#fix #cart {
+	height: 380px;
+    overflow: auto;
+}
+#fix #mini-title {
+	cursor: pointer;
+}
+#fix #mini-title:hover {
+	text-decoration: none;
+}
+#fix #cart img{
+	height: 50px;
+}
+#fix #cart .input-cart-qty{
+	width: 40px;
+    margin: 0 10px;
+}
+#fix #cart #note {
+	width: 100%;
+}
+
+#fix #cart #PONumber {
+	width: 100%;
+}
+
+#fix #cart .ilabel {
+	color: #C83232;
+}
+/*--- Fix */
+
+/*+++ Product List */
+.loader {
+    border: 16px solid #dfdfe5; /* Light grey */
+    border-top: 16px solid navy; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+	margin: 0 auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#product-list {
+    padding-right: 40px;
+	background: white;
+	padding-top: 10px;
+}	
+#product-list .list-item {
+	//outline: 1px solid #C83232;
+    //margin-bottom: 8px;
+	border-bottom: 1px solid #C83232;
+}
+#product-list img {
+	/height: 160px;
+	//max-width: 160px;
+	
+	max-height: 160px;
+    max-width: 160px;
+}
+#product-list .sold-out {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+	padding: 10px;
+}
+#product-list #plist-name {
+	font-weight: bold;
+}
+#product-list .in-stock {
+    display: none;
+}
+#product-list .mine {
+	//color: #2121AC;
+}
+#product-list .others {
+	color: #2121AC;
+}
+#product-list .desc {
+	height: 130px;
+	overflow: auto;
+}
+#product-list .message {
+	height: 130px;
+	overflow: auto;
+}
+#product-list .input-message {
+	margin-right: 10px;
+}
+#product-list .input-qty {
+	margin-right: 10px;
+	width: 40px;
+}
+#product-list .qty-in-cart {
+	font-weight: bold;
+    font-size: 17px;
+}
+#product-list .qty-in-cart.have {
+	color: #C83232;
+}
+#product-list  button.in {
+	//display: none;
+}
+#product-list  .order .product img {
+	height: 30px;
+}
+#product-list .order-detail-title {
+	color: #C83232;
+}
+#product-list  .order button {
+	margin: 5px 0;
+}
+#product-list  .order-num {
+	font-size: 28px;
+}
+#product-list  .detail {
+	font-size: 28px;
+}
+#product-list  .detail a {
+	cursor: pointer;
+	text-decoration: none;	
+}
+#product-list  .order-total {
+	color: #C83232;
+}
+/*--- Product List */
